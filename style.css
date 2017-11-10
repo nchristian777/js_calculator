@@ -91,7 +91,7 @@ h1 {
 	position: relative;
 	color: #dee1e8;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
+	font-size: 2vw;
 	cursor: pointer;
 	outline: none;
 
@@ -176,15 +176,9 @@ h1 {
 	border: 0;
 }
 
-.negativeFlag {
-	font-family: 'Michroma', sans-serif;
-	font-size: 3em;
-	width: 12%;
-}
-
 @media screen and (max-width: 600px) and (min-width: 0px) {
 	html {
-		font-size: 10px;
+		/*font-size: 10px;*/
 	}
 
 	.calculator-main {
@@ -195,7 +189,7 @@ h1 {
 
 @media screen and (max-width: 900px) and (min-width: 601px) {
 	html {
-		font-size: 12px;
+		/*font-size: 12px;*/
 	}
 
 	.calculator-main {
@@ -206,7 +200,7 @@ h1 {
 
 @media screen and (max-width: 1200px) and (min-width: 901px) {
 	html {
-		font-size: 14px;
+		/*font-size: 14px;*/
 	}
 
 	.calculator-main {
