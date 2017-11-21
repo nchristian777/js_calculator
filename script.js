@@ -7,11 +7,11 @@ let currentInput = 0;
 let screen = null;
 
 function ajustFontSize(currentInputLength) {
-  if (currentInputLength === 6) {
-    screen.style.fontSize = '2em';
+  /**if (currentInputLength === 6) {
+    screen.style.fontSize = '2vw';
   } else if (currentInputLength >= 10) {
-    screen.style.fontSize = '1.5em';
-  }
+    screen.style.fontSize = '1.5vw';
+  }*/
 }
 /** unfinished
 function checkRoundDecimal() {
@@ -39,7 +39,7 @@ function plusMinus() {
 
 function clear() {
   screen.innerHTML = '';
-  screen.style.fontSize = '3em';
+  //screen.style.fontSize = '3em';
   currentTotal = 0;
   newInput = true;
   currentAction = false;
