@@ -6,21 +6,6 @@ let initialValue = true;
 let currentInput = 0;
 let screen = null;
 
-function ajustFontSize(currentInputLength) {
-  /**if (currentInputLength === 6) {
-    screen.style.fontSize = '2vw';
-  } else if (currentInputLength >= 10) {
-    screen.style.fontSize = '1.5vw';
-  }*/
-}
-/** unfinished
-function checkRoundDecimal() {
-  if (currentTotal.match(/\.\d+/) && currentTotal.toString().length > 14) {
-    let spacesAvalible = currentTotal.match(/(\d+)\./)
-    currentTotal = currentTotal.toFixed()
-  }
-}
-*/
 function checkForDecimal(value) {
   if (currentInput.match(/\./) && value === '.') {
     return true;
@@ -39,7 +24,6 @@ function plusMinus() {
 
 function clear() {
   screen.innerHTML = '';
-  //screen.style.fontSize = '3em';
   currentTotal = 0;
   newInput = true;
   currentAction = false;
@@ -110,7 +94,6 @@ function displayTotal() {
       selectAction(currentAction);
       currentAction = false;
     }
-    ajustFontSize(currentTotal.toString().length);
     screen.innerHTML = currentTotal;
     previousTotal = true;
   }
@@ -150,7 +133,6 @@ function selectAction(buttonId) {
 function insert(clicked) {
   const currentInputLength = screen.innerHTML.length;
   const value = document.getElementById(clicked).innerHTML;
-  ajustFontSize(currentInputLength);
   if (currentInputLength !== 14 && !checkForDecimal(value)) {
     if (newInput) {
       screen.innerHTML = value;
